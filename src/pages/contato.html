@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
     <title>Contato</title>
-    <link rel="stylesheet" href="estilo.css">
+
 </head>
+
 <body>
 
     <header>
         <div class="logo">Enchentes</div>
- 
+
         <nav class="menu">
             <a href="../../index.html">Home</a>
             <a href="./sobre.html">Sobre</a>
             <a href="./quiz.html">Quiz</a>
             <a href="./contato.html">Contato</a>
-            <a href="#prevencao">Prevenção</a>
-            <a href="#alertas">Alertas</a>
-            <a href="#abrigos">Abrigos</a>
-            
         </nav>
- 
+
         <div class="hamburger" onclick="toggleMenu()">
             <div></div>
             <div></div>
             <div></div>
         </div>
     </header>
- 
-   
- 
-    <section id="contato" class="secao contato">
-        <div class="contato-container">
-            <h2>Contato</h2>
-            <p>Entre em contato caso queira ajudar com doações.</p>
-            <form class="formulario-contato">
-                <input type="text" placeholder="Seu Nome">
-                <input type="email" placeholder="Seu Email">
-                <textarea placeholder="Sua Mensagem"></textarea>
-                <button type="submit">Enviar Mensagem</button>
-            </form>
-            <div class="contatos-ajuda">
-                <a href="#">Instagram</a>
-                <a href="#">WhatsApp</a>
-            </div>
-        </div>
-    </section>
- 
 
+    <main>
+
+        <section id="contato" class="secao-contato">
+            <div class="contato-container">
+                <h2>Contato</h2>
+                <p>Entre em contato caso queira ajudar com doações.</p>
+                <form class="formulario-contato">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="Seu Email" required>
+                    <textarea placeholder="Sua Mensagem"></textarea>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+                <div class="redes-sociais">
+                    <a href="#">Instagram</a>
+                    <a href="#">WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
-        <p>&copy; 2023 João Silva. Todos os direitos reservados.</p>
+        <h5>&copy; 2025 - todos os direitos reservados</h5>
     </footer>
+
+    <script src="../js/script.js"></script>
 </body>
+
 </html>

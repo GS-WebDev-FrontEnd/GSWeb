@@ -3,10 +3,10 @@ let imagens = [
     'src/assets/imagem2.jpg',
     'src/assets/imagem3.jpg',
 ]
- 
+
 let i = 0;
 let tempo = 3000;
- 
+
 function slideShow() {
     document.getElementById('image').src = imagens[i];
     i++;
@@ -16,7 +16,10 @@ function slideShow() {
     setTimeout("slideShow()", tempo)
 }
 slideShow();
- 
+
+
+
+
 function toggleMenu() {
     const menu = document.querySelector('.menu');
     menu.classList.toggle('active');

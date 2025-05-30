@@ -1,15 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --bg-color: #AAB8F0;
 }
- 
+
+/* Estilo geral */
 body {
-    background: #589A8D;
+    background: var(--bg-color);
+    transition: background-color 0.5s;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #031231;
 }
- 
+
+/* Header */
 header {
-    background: #589A8D;
+    background: var(--bg-color);
     color: #345;
     padding: 20px;
     display: flex;
@@ -18,31 +22,49 @@ header {
     box-shadow: 5px 5px 5px #555;
     position: relative;
 }
- 
+
 header .logo {
     font-size: 1.8em;
     font-weight: bold;
     color: #031231;
 }
- 
+
+/* Menu */
 .menu {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
- 
+
 .menu a {
     text-decoration: none;
     color: #031231;
     font-weight: 600;
     transition: color 0.3s;
 }
- 
+
 .menu a:hover {
     color: rgb(94, 3, 94);
     text-decoration: underline;
     text-transform: uppercase;
 }
- 
+
+/* Label, Select e Checkbox */
+.menu label {
+    margin-left: 10px;
+}
+
+.menu select,
+.menu input[type="checkbox"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    background-color: white;
+    color: #031231;
+}
+
+/* Hamburger */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -51,73 +73,88 @@ header .logo {
     height: 22px;
     cursor: pointer;
 }
- 
+
 .hamburger div {
     height: 4px;
-    background-color: #0B2559;
+    background-color: #153e92;
     border-radius: 5px;
 }
- 
+
+/* Responsivo */
 @media (max-width: 768px) {
     .menu {
         display: none;
         position: absolute;
         top: 70px;
         right: 20px;
-        background-color: #589A8D;
+        background-color: var(--bg-color);
         flex-direction: column;
-        width: 200px;
+        width: 220px;
         padding: 15px;
         border-radius: 10px;
         box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
         z-index: 1000;
     }
- 
+
     .menu.active {
         display: flex;
     }
- 
+
     .hamburger {
         display: flex;
     }
 }
- 
-.banner #image {
+
+/* Banner */
+.banner {
+    position: relative;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
+}
+
+.banner #image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
- 
+
+/* Esconde o banner quando necessário */
+.hidden {
+    display: none;
+}
+
+/* Footer */
 footer {
     background-color: #345;
     color: white;
     text-align: center;
     padding: 10px;
 }
- 
- 
- 
- 
+
+
  
 /*QUIZ*/
- 
-.app{
+.app {
     background: #fff;
     width: 90%;
     max-width: 600px;
-    margin: 100px auto 0;
+    margin: 0; 
     padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    border-radius: 8px; 
 }
+
 .app h1{
     font-weight: 25px;
-    color: #001e4d;
+    color: #75A0EB;
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
 }
  
 #container-quiz{
-    background: #001e4d;
+    background: #8dafeb;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,3 +210,46 @@ footer {
     background: #ff9393;
 }
  
+/*CONTATO*/
+
+.contato {
+    background-color: #ddd;
+}
+
+.contato-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+} 
+
+.formulario-contato {
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario-contato input [type="text"],
+.formulario-contato input [type="email"],
+.formulario-contato textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.formulario-contato textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.formulario-contato button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border:none;
+    border-radius:5px;
+}
