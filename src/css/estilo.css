@@ -1,51 +1,36 @@
-:root {
-    --bg-color: #AAB8F0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-    body {
-        background: #AAB8F0;
-        transition: background-color 0.5s;
-        margin: 0;
-        font-family: Arial, sans-serif;
-        color: #031231;
-    }
+body {
+    background: #AAB8F0;
+    transition: background-color 0.5s;
+    font-family: Arial, sans-serif;
+    color: #031231;
+}
 
 header {
     background: #AAB8F0;
-    color: rgb(70, 95, 120);
+    color: #031231;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 5px 5px 5px #555;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     position: relative;
 }
 
-header .logo {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #031231;
-}
-
-.logo img {
-    height: 80px; 
-    vertical-align: middle;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px; 
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff; 
+header .logo img {
+    height: 50px;
 }
 
 .menu {
     display: flex;
-    gap: 20px;
     align-items: center;
+    gap: 25px;
+    position: relative;
 }
 
 .menu a {
@@ -61,18 +46,105 @@ header .logo {
     text-transform: uppercase;
 }
 
-.menu label {
-    margin-left: 10px;
+.dropdown {
+    position: relative;
 }
 
-.menu select,
-.menu input[type="checkbox"] {
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #AAB8F0;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    z-index: 1;
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+.dropdown-content a {
+    color: #031231;
+    padding: 10px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #64b5f6;
+    color: white;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu > a {
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    background-color: #AAB8F0;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    z-index: 1;
+    border-radius: 8px;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+.submenu-content label,
+.submenu-content select {
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+    color: #031231;
+}
+
+.submenu-content select {
     padding: 5px;
     border-radius: 5px;
-    border: none;
-    font-size: 14px;
+    border: 1px solid #031231;
     background-color: white;
-    color: #031231;
+}
+
+.submenu-content select:hover {
+    background-color: #64b5f6;
+    color: white;
+}
+
+#banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hidden {
+    display: none !important;
+}
+
+label {
+    margin-right: 8px;
+    font-weight: 600;
 }
 
 .hamburger {
@@ -88,6 +160,16 @@ header .logo {
     height: 4px;
     background-color: #153e92;
     border-radius: 5px;
+}
+
+footer {
+    background-color: #AAB8F0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -112,40 +194,33 @@ header .logo {
     .hamburger {
         display: flex;
     }
+
+    .dropdown-content {
+        position: relative;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .dropdown-content a {
+        padding: 8px 0;
+    }
+
+    .submenu-content {
+        position: relative;
+        left: 0;
+        top: 0;
+        box-shadow: none;
+        background-color: transparent;
+        padding: 5px 0;
+    }
 }
 
-.banner {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
 
-.banner #image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hidden {
-    display: none;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #AAB8F0;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
 
  
 /*QUIZ*/
 .app {
-    background: #fff;
+    background: #dbd5d5;
     width: 90%;
     max-width: 600px;
     margin: 0; 

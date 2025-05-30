@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilo.css">
-    <title>Sobre</title>
+    <title>Informações</title>
 </head>
 
 <body>
@@ -17,15 +17,21 @@
 
         <nav class="menu">
             <a href="../../index.html">Home</a>
-            <a href="./informacoes.html">Informações</a>
+
+            <div class="dropdown">
+                <a href="./informacoes.html">Informações ▾</a>
+                <div class="dropdown-content">
+                    <a href="#problema">Problema</a>
+                    <a href="#tecnologia">Tecnologias Utilizadas</a>
+                    <a href="#objetivos">Objetivos</a>
+                    <a href="#public-alvo">Público-alvo</a>
+                    <a href="#beneficios">Benefícios</a>
+                    <a href="#ajuda">Ajuda</a>
+                </div>
+            </div>
+
             <a href="./quiz.html">Quiz</a>
             <a href="./contato.html">Contato</a>
-            <a href="#problema">Problema</a>
-            <a href="#tecnologia">Tecnologias Utilizadas</a>
-            <a href="#objetivos">Objetivos</a>
-            <a href="#public-alvo">Público-alvo</a>
-            <a href="#beneficios">Benefícios</a>
-            <a href="#ajuda"></a>
         </nav>
 
         <div class="hamburger" onclick="toggleMenu()">
@@ -35,6 +41,20 @@
         </div>
     </header>
 
+    <main class="content">
+        <h1>Informações sobre Enchentes</h1>
+        <p>
+            As enchentes são fenômenos naturais que ocorrem quando o volume de água excede a capacidade de escoamento de um local. Elas podem ser agravadas por problemas urbanos, como impermeabilização do solo e falta de drenagem.
+        </p>
+        <p>
+            No menu acima, você pode acessar mais informações detalhadas:
+        </p>
+        <ul>
+            <li><strong>Sobre:</strong> Entenda o que são enchentes e seus impactos.</li>
+            <li><strong>Estatísticas:</strong> Dados sobre enchentes na sua região.</li>
+            <li><strong>Prevenção:</strong> Dicas e medidas para evitar danos.</li>
+        </ul>
+    </main>
 
     <footer>
         <h5>&copy; 2025 FluxoSP - Todos os direitos reservados</h5>
