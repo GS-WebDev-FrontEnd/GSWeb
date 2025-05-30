@@ -3,18 +3,17 @@
 }
 
 
-body {
-    background: #AAB8F0;
-    transition: background-color 0.5s;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #031231;
-}
+    body {
+        background: #AAB8F0;
+        transition: background-color 0.5s;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #031231;
+    }
 
-/* Header */
 header {
     background: #AAB8F0;
-    color: #345;
+    color: rgb(70, 95, 120);
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -133,12 +132,15 @@ header .logo {
 }
 
 footer {
-    background-color: #345;
-    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #AAB8F0;
+    color: white;
     text-align: center;
     padding: 10px;
 }
-
 
  
 /*QUIZ*/
@@ -161,7 +163,7 @@ footer {
 }
  
 #container-quiz{
-    background: #8dafeb;
+    background-image:radial-gradient(#8980BF, #8dafeb) ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,8 +219,8 @@ footer {
     background: #ff9393;
 }
  
-/*CONTATO*/
 
+/*CONTATO*/
 .contato {
     background-color: #ddd;
 }
