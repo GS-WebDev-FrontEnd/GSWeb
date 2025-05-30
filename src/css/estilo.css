@@ -2,9 +2,9 @@
     --bg-color: #AAB8F0;
 }
 
-/* Estilo geral */
+
 body {
-    background: var(--bg-color);
+    background: #AAB8F0;
     transition: background-color 0.5s;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@ body {
 
 /* Header */
 header {
-    background: var(--bg-color);
+    background: #AAB8F0;
     color: #345;
     padding: 20px;
     display: flex;
@@ -29,7 +29,20 @@ header .logo {
     color: #031231;
 }
 
-/* Menu */
+.logo img {
+    height: 80px; 
+    vertical-align: middle;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; 
+}
+
 .menu {
     display: flex;
     gap: 20px;
@@ -49,7 +62,6 @@ header .logo {
     text-transform: uppercase;
 }
 
-/* Label, Select e Checkbox */
 .menu label {
     margin-left: 10px;
 }
@@ -64,7 +76,6 @@ header .logo {
     color: #031231;
 }
 
-/* Hamburger */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -80,14 +91,13 @@ header .logo {
     border-radius: 5px;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
     .menu {
         display: none;
         position: absolute;
         top: 70px;
         right: 20px;
-        background-color: var(--bg-color);
+        background-color: #AAB8F0;
         flex-direction: column;
         width: 220px;
         padding: 15px;
@@ -105,7 +115,6 @@ header .logo {
     }
 }
 
-/* Banner */
 .banner {
     position: relative;
     width: 100%;
@@ -119,15 +128,13 @@ header .logo {
     object-fit: cover;
 }
 
-/* Esconde o banner quando necessário */
 .hidden {
     display: none;
 }
 
-/* Footer */
 footer {
     background-color: #345;
-    color: white;
+    color: #fff;
     text-align: center;
     padding: 10px;
 }
