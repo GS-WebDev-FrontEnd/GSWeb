@@ -23,7 +23,7 @@ header {
 }
 
 header .logo img {
-    height: 50px;
+    height: 80px;
 }
 
 .menu {
@@ -70,7 +70,7 @@ header .logo img {
 
 .dropdown-content a:hover {
     background-color: #64b5f6;
-    color: white;
+    color: rgb(94, 3, 94);
     border-radius: 5px;
 }
 
@@ -117,12 +117,12 @@ header .logo img {
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #031231;
-    background-color: white;
+    background-color: rgb(94, 3, 94);
 }
 
 .submenu-content select:hover {
     background-color: #64b5f6;
-    color: white;
+    color: rgb(94, 3, 94);
 }
 
 #banner {
