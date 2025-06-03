@@ -48,13 +48,22 @@ header .logo img {
 
 .dropdown {
     position: relative;
+    padding: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:self-start;
 }
 
 .dropdown-content {
     display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
     position: absolute;
     background-color: #AAB8F0;
     min-width: 160px;
+    width: 100%;
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
     z-index: 1;
     border-radius: 8px;
@@ -139,7 +148,7 @@ header .logo img {
 }
 
 .hidden {
-    display: none !important;
+    display: none;
 }
 
 label {
@@ -164,7 +173,7 @@ label {
 
 footer {
     background-color: #AAB8F0;
-    color: white;
+    color: black;
     text-align: center;
     padding: 10px;
     position: fixed;
@@ -337,3 +346,54 @@ footer {
     border:none;
     border-radius:5px;
 }
+
+
+/*INFORMAÇÕES*/
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.section-alt {
+    background-color: #e9f5fb;
+}
+
+.section h2 {
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+.section p, 
+.section ul {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.section ul li::before {
+    content: "•";
+    color: #0077b6;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
