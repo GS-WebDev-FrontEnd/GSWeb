@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/estilo.css">
+    <title>Página Inicial</title>
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./src/assets/logo.png" alt="Logo FluxoSP">
+        </div>
+
+        <nav class="menu">
+            <div class="dropdown">
+                <a href="./index.html" class="dropbtn">Home</a>
+                <div class="dropdown-content">
+                    <label for="colorSelector">Cor de fundo:</label>
+                    <select id="colorSelector">
+                        <option value="#1976d2">Azul Médio</option>
+                        <option value="#64b5f6">Azul Claro</option>
+                        <option value="#AAB8F0" selected>Azul Pastel</option>
+                        <option value="#bbdefb">Azul Bebê</option>
+                    </select>
+                </div>
+            </div>
+        
+            <a href="./src/pages/informacoes.html">Informações</a>
+            <a href="./src/pages/quiz.html">Quiz</a>
+            <a href="./src/pages/contato.html">Contato</a>
+        
+            <label for="toggleSlideshow">Mostrar Slideshow</label>
+            <input type="checkbox" id="toggleSlideshow" checked>
+        </nav>
+        
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <section class="banner" id="banner">
+        <img id="image" src="./src/assets/imagem1.jpg" alt="Imagem do Slideshow">
+    </section>
+
+    <footer>
+        <h5>&copy; 2025 FluxoSP - Todos os direitos reservados</h5>
+    </footer>
+
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/background.js"></script>
+</body>
+
+</html>
