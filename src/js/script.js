@@ -23,3 +23,10 @@ let imagens = [
     const hamburger = document.querySelector('.hamburger');
     hamburger.addEventListener('click', toggleMenu);
   });
+
+  function mostrarMapaWindy() {
+    const mapa = document.getElementById("windy-widget");
+    mapa.style.display = "block";
+    mapa.scrollIntoView({ behavior: "smooth" });
+  }
+  
