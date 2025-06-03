@@ -1,60 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/estilo.css">
-    <title>Página Inicial</title>
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fluxo SP - Prevenção de Enchentes</title>
+    <link rel="stylesheet" href="./src/css/estilo.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
     <header>
         <div class="logo">
-            <img src="./src/assets/logo.png" alt="Logo FluxoSP">
+            <img src="./src/assets/logo.png" alt="Logo Fluxo SP" />
         </div>
-
         <nav class="menu">
-            <div class="dropdown">
-                <a href="./index.html" class="dropbtn">Home</a>
-                <div class="dropdown-content">
-                    <label for="colorSelector">Cor de fundo:</label>
-                    <select id="colorSelector">
-                        <option value="#1976d2">Azul Médio</option>
-                        <option value="#64b5f6">Azul Claro</option>
-                        <option value="#AAB8F0" selected>Azul Pastel</option>
-                        <option value="#bbdefb">Azul Bebê</option>
-                    </select>
-                </div>
-            </div>
-        
+            <a href="index.html">Início</a>
             <a href="./src/pages/informacoes.html">Informações</a>
             <a href="./src/pages/quiz.html">Quiz</a>
             <a href="./src/pages/contato.html">Contato</a>
-        
-            <label for="toggleSlideshow">Mostrar Slideshow</label>
-            <input type="checkbox" id="toggleSlideshow" checked>
+            <a href="#sobre" class="cta">Saiba mais</a>
         </nav>
-        
+        <div class="hamburger">
 
-        <div class="hamburger" onclick="toggleMenu()">
             <div></div>
             <div></div>
             <div></div>
         </div>
     </header>
 
-    <section class="banner" id="banner">
-        <img id="image" src="./src/assets/imagem1.jpg" alt="Imagem do Slideshow">
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Prevenção de Enchentes</h1>
+            <p>Aprenda a reduzir riscos e proteger sua comunidade contra enchentes.</p>
+            <a href="./src/pages/informacoes.html" class="btn-primary">Ver como funciona</a>
+        </div>
+    </section>
+
+
+
+    <section class="features" id="sobre">
+        <div class="feature">
+            <img src="./src/assets/info-icon.svg" alt="Ícone Informação" />
+            <h3>Importância da Prevenção</h3>
+            <p>Evite danos, proteja vidas e mantenha sua comunidade segura.</p>
+        </div>
+        <div class="feature">
+            <img src="./src/assets/quiz-icon.svg" alt="Ícone Quiz" />
+            <h3>Quiz Interativo</h3>
+            <p>Teste seus conhecimentos e ajude a prevenir enchentes.</p>
+        </div>
+    </section>
+
+    <section class="contato-home">
+        <h2>Fale Conosco</h2>
+        <p>Entre em contato para saber mais ou apoiar o projeto.</p>
+        <a href="./src/pages/contato.html" class="btn-secondary">Contato</a>
     </section>
 
     <footer>
-        <h5>&copy; 2025 FluxoSP - Todos os direitos reservados</h5>
+        <p>&copy; 2025 Fluxo SP – Todos os direitos reservados.</p>
     </footer>
-
     <script src="./src/js/script.js"></script>
-    <script src="./src/js/background.js"></script>
+
 </body>
 
 </html>
