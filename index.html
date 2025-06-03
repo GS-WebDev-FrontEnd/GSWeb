@@ -42,16 +42,35 @@
 
     <section class="features" id="sobre">
         <div class="feature">
-            <img src="./src/assets/info-icon.svg" alt="Ícone Informação" />
+            <img src="./src/assets/importancia_prevencao.png" alt="Ícone Informação" />
             <h3>Importância da Prevenção</h3>
             <p>Evite danos, proteja vidas e mantenha sua comunidade segura.</p>
         </div>
-        <div class="feature">
-            <img src="./src/assets/quiz-icon.svg" alt="Ícone Quiz" />
+        <a href="./src/pages/quiz.html">
+            <div class="feature">
+            <img src="./src/assets/quiz_interativo.png" alt="Ícone Quiz" />
             <h3>Quiz Interativo</h3>
             <p>Teste seus conhecimentos e ajude a prevenir enchentes.</p>
+            </div>
+        </a>
+        <a href="https://portais.santoandre.sp.gov.br/defesacivil/monitoramento-rios-e-corregos/" target="_blank" class="feature-link">
+            <div class="feature">
+            <img src="./src/assets/fluxo_sp_dashboard.png" alt="Ícone Dashboard" />
+            <h3>Dashboard de Monitoramento</h3>
+            <p>Acompanhe dados em tempo real sobre os riscos e ações das autoridades.</p>
+            </div>
+        </a>
+        <div class="feature" onclick="mostrarMapaWindy()">
+            <img src="./src/assets/atualizacoes_meteorologicas.png" alt="Ícone Clima" />
+            <h3>Atualizações Meteorológicas</h3>
+            <p>Receba previsões e alertas diretamente no seu dispositivo.</p>
         </div>
     </section>
+    <section id="windy-widget" style="display: none; width: 100%; height: 600px; margin-top: 40px;">
+        <iframe width="100%" height="100%" 
+          src="https://embed.windy.com/embed2.html?lat=-23.55&lon=-46.63&detailLat=-23.55&detailLon=-46.63&width=100%&height=600&zoom=7&level=surface&overlay=rain&product=ecmwf"
+          frameborder="0"></iframe>
+      </section>
 
     <section class="contato-home">
         <h2>Fale Conosco</h2>
