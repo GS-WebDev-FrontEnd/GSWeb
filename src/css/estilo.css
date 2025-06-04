@@ -353,3 +353,51 @@ html{
   scroll-behavior:smooth;
 }
 
+.prevencao-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9fbfe;
+  color: #333;
+}
+
+.prevencao-container h1 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 30px;
+}
+
+.bloco-intro {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.bloco-intro img {
+  width: 60px;
+}
+
+.prevencao-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #e4f5fd;
+  border-left: 2px solid var(--primary);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.botao-final {
+  text-align: center;
+  margin-top: 30px;
+}
