@@ -173,7 +173,7 @@ header {
     
       .hamburger {
         display: flex;
-        align-self: flex-end;
+        align-self: flex;
         margin: 10px 20px 5px 0;
       }
     }
@@ -352,3 +352,4 @@ header {
 html{
   scroll-behavior:smooth;
 }
+

@@ -7,16 +7,22 @@ let imagens = [
   let i = 0;
   let tempo = 3000;
   
-  function slideShow() {
-    const heroSection = document.querySelector('.hero');
-    heroSection.style.backgroundImage = `url(${imagens[i]})`;
-    heroSection.style.backgroundSize = 'cover';
-    heroSection.style.backgroundPosition = 'center';
-  
-    i = (i + 1) % imagens.length;
-  
-    setTimeout(slideShow, tempo);
-  }
+  function slideShow() { 
+  const heroSection = document.querySelector('.hero');
+  if (!heroSection) return; // <-- isso impede erro se não houver .hero
+
+  heroSection.style.backgroundImage = `url(${imagens[i]})`;
+  heroSection.style.backgroundSize = 'cover';
+  heroSection.style.backgroundPosition = 'center';
+
+  i = (i + 1) % imagens.length;
+  setTimeout(slideShow, tempo);
+}
+
+  function toggleMenu() {
+  const menu = document.querySelector('.menu');
+  menu.classList.toggle('active');
+}
   
   document.addEventListener('DOMContentLoaded', () => {
     slideShow();
