@@ -402,23 +402,34 @@ html{
   margin-top: 30px;
 }
 
-.windy-controls {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.windy-controls button {
-  background: #2a80b9;
+.alerta {
+  display: none;
+position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: red;
   color: white;
-  border: none;
-  padding: 0.6rem 1rem;
-  margin: 0 0.3rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.2s ease;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  z-index: 9999;
+  animation: piscar 1s infinite;
 }
 
-.windy-controls button:hover {
-  background: #1e5c8f;
+@keyframes piscar {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
 }
 
+.log-container {
+  background: #fff3cd;
+  border-left: 5px solid #ffa726;
+  padding: 1rem;
+  margin: 40px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+.log-container p {
+  margin: 0.3rem 0;
+}

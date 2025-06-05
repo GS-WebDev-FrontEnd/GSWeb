@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONFIGURACOES</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+   <header>
+        <div class="logo">
+            <img src="../assets/logo.png" alt="Logo FluxoSP">
+        </div>
+        <nav class="menu">
+            <a href="../../index.html">Home</a>   
+            <a href="../pages/informacoes.html">Informações</a>
+            <a href="../pages/quiz.html">Quiz</a>
+            <a href="../pages/contato.html">Contato</a>
+        </nav>
+   </header> 
+
+   <main>
+        <form id="form-preferencias">
+            <h2>Minhas Preferências</h2>
+            <label><input type="checkbox" name="canal" value="push"> Notificações Push</label><br>
+            <label><input type="checkbox" name="canal" value="sms"> SMS</label><br>
+            <label><input type="checkbox" name="canal" value="email"> E-mail</label><br>
+
+            <input type="email" name="email" placeholder="Seu e-mail">
+            <input type="tel" name="telefone" placeholder="Seu número de celular">
+            <input type="text" name="bairro" placeholder="Digite seu bairro" required>
+
+            <button type="submit">Salvar Preferências</button>
+        </form>
+   </main>
+
+     <footer>
+        <h5>&copy; 2025 FluxoSP - Todos os direitos reservados</h5>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/preferencia.js"></script>
+</body>
+</html>
+
+
